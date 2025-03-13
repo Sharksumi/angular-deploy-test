@@ -69,7 +69,8 @@
                 }
               ],
               "outputHashing": "all",
-              "baseHref": "/angular-deploy-test/"
+              "baseHref": "/angular-deploy-test/",
+              "outputPath": "dist/angular17-demo"
             },
             "development": {
               "optimization": false,
