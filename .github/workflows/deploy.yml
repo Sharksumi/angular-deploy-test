@@ -15,7 +15,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: '18.13'
+          node-version: '22.13.0'
 
       - name: Install dependencies
         run: npm install
@@ -24,12 +24,12 @@ jobs:
         run: npm run build
 
       - name: List build directory
-        run: ls -la dist
+        run: ls -la build/home
 
       - name: Deploy
         if: success()
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.DEPLOY_GHP_TEST }}
-          publish_dir: dist/angular17-demo
+          publish_dir: build/home
           enable_jekyll: true
