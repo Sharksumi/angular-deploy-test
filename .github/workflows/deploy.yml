@@ -30,6 +30,9 @@ jobs:
       - name: Build
         run: npm run build -- --configuration=production --output-path=dist/angular17-demo
 
+      - name: Listar archivos en dist antes de publicar
+        run: ls -R dist/angular17-demo/
+
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v4
         if: github.ref == 'refs/heads/main'
