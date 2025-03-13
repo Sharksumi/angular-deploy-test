@@ -28,13 +28,13 @@ jobs:
         run: npm install
 
       - name: Build
-        run: npm run build -- --output-path=build/home
+        run: npm run build --prefix src -- --output-path=build/home
 
       - name: List build directory
-        run: ls -la build/home
+        run: ls -la src/build/home
 
       - name: Verify build directory
-        run: ls -R build/home
+        run: ls -R src/build/home
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v4
@@ -42,6 +42,6 @@ jobs:
         with:
           github_token: ${{ secrets.TOKEN_DEPLOY_TEST_GHP }}
           publish_branch: gh-pages  # Ensure this is set to gh-pages
-          publish_dir: build/home  # Adjust this if your build directory is different
+          publish_dir: src/build/home  # Adjust this if your build directory is different
           enable_jekyll: true
           exclude_assets: .github  # Exclude hidden files and directories
