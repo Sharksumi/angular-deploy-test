@@ -38,7 +38,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/demo17",
+            "outputPath": "dist/angular17-demo",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
