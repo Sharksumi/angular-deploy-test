@@ -36,6 +36,6 @@ jobs:
         with:
           github_token: ${{ secrets.TOKEN_DEPLOY_TEST_GHP }}
           publish_branch: gh-pages  # Ensure this is set to gh-pages
-          publish_dir: build/home  # Adjust this if your build directory is different
+          publish_dir: dist/angular17-demo  # Adjust this to the correct build directory
           enable_jekyll: true
           exclude_assets: .github  # Exclude hidden files and directories
