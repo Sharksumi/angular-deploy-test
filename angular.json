@@ -68,7 +68,8 @@
                   "maximumError": "4kb"
                 }
               ],
-              "outputHashing": "all"
+              "outputHashing": "all",
+              "baseHref": "/angular-deploy-test/"
             },
             "development": {
               "optimization": false,
