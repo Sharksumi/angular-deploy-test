@@ -1,2 +1,0 @@
-import{Va as i,Wa as a,Y as s,eb as o,kb as m}from"./chunk-GKC6B43O.js";var l=(()=>{let e=class e{constructor(){}};e.\u0275fac=function(n){return new(n||e)},e.\u0275cmp=s({type:e,selectors:[["app-admin"]],standalone:!0,features:[m],decls:4,vars:0,consts:[[2,"margin-bottom","80px"]],template:function(n,p){n&1&&(i(0,"h2"),o(1,"Admin"),a(),i(2,"p",0),o(3,` This is the admin section.
-`),a())},encapsulation:2});let t=e;return t})();export{l as default};
