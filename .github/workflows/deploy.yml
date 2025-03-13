@@ -28,7 +28,7 @@ jobs:
         run: npm install
 
       - name: Build
-        run: npm run build --prefix src -- --output-path=src/build/home
+        run: npm run build -- --output-path=src/build/home
 
       - name: List build directory
         run: ls -la src/build/home
