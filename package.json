@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build --output-path=build/home",
+    "build": "ng build --output-path=dist/angular17-demo",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
