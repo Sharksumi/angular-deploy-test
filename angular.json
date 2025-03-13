@@ -68,7 +68,9 @@
                   "maximumError": "4kb"
                 }
               ],
-              "outputHashing": "all"
+              "outputHashing": "all",
+              "baseHref": "/angular-deploy-test/",
+              "outputPath": "dist/angular17-demo"
             },
             "development": {
               "optimization": false,
